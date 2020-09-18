@@ -8,11 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Out boats:</h1>
-    <button id="getBoatsBtn">Get boats</button>
+    <h1 id="showBoats">
+    </h1>
+
+    <ul id="boatList">
+
+    </ul>
 
     <h2>Add new boats to the collection!</h2>
-    <input type="text" id="boatNameInput" />
-    <button id="addNewBoat">Add boat</button>
+    <input type="text" id="nameInput"  placeholder="Model: " value="" /><br><br>
+    <input type="text" id="yearInput"  placeholder="Year: " value="" /><br><br>
+    <input type="text" id="priceInput"  placeholder="Price: "  value="" /><br><br>
+
+    <label for="y_n_sailboat">Do you have a sailboat? </label>
+    <input type="radio" name="y_n_sailboat" class="engineRadioBtns" value="Yes" checked/>Yes
+    <input type="radio" name="y_n_sailboat" class="engineRadioBtns" value="No"/>No<br><br>
+
+    <label for="y_n_engine">Do you have a engine? </label>
+    <input type="radio" name="y_n_engine" class="engineRadioBtns" value="Yes" checked/>Yes
+    <input type="radio" name="y_n_engine" class="engineRadioBtns" value="No"/>No<br><br>
+
+    <button id="addNewBoat" >Add Boat</button> /
+    <button id="getBoatsBtn"  >Get All Boats</button> /
+    <button id="clearDatabase" >Reset Database</button> <!-- CLEARS DATABASE AND GETS STATIC BOATS -->
+    
+    
+
+    <div id="Searchbars">
+        <h1>Choose categories FIRST then search!</h1>
+        <select id="categories">
+            <option value="word">Boatmodel</option>
+            <option value="maxprice">Maxprice</option>
+        </select>
+        <select id="sortButtons">
+            <option value="lowprice">Lowest price first</option>
+            <option value="oldest">Oldest Boat first</option>
+            <option value="newest">Newest boat first</option>
+            <option value="name_asc">A-Ö</option>
+            <option value="name_desc">Ö-A</option>
+        </select>
+    
+        <br><br>
+        <input type="text" id="searchInput" value="" placeholder="Enter your search...">
+    </div>
+    
 </body>
 </html>

@@ -1,0 +1,40 @@
+show dbs //visar databaser
+
+use "databasnamn" //Välj en databas
+
+show collections //Visa dokumenten
+
+db.databasnamn.find().pretty() //Visar valt dokuments innehåll
+
+db.databasnamn.count() //Räknar antal objekt i valt dokument
+
+db.databasnamn.insertOne ELLER insertMany({name: "Emil", age: 22}); // Skickar in ett objekt i dokument
+
+////////////////// berrasboat queries ////////////////////
+
+db.berrasboats.find({name: "Catamaran"})
+
+db.berrasboats.find({ price: { $gte: 200022 } })
+
+db.berrasboats.insertOne({
+    name: "Johnson",
+    year: 2020,
+    price: 420000,
+    sailboat: "No",
+    engine: "Yes"
+})
+
+db.berrasboats.insertMany([{
+    name: "Johnson",
+    year: 2020,
+    price: 420000,
+    sailboat: "No",
+    engine: "Yes"
+},
+{
+    name: "Ryds",
+    year: 1990,
+    price: 300000,
+    sailboat: "No",
+    engine: "Yes"
+}])

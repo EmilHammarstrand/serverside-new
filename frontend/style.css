@@ -1,0 +1,82 @@
+#boatList{
+    align-items: center;
+    justify-items: center;
+    grid-gap: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+li{
+    border: 2px solid rgb(1, 157, 219);
+    line-height: 1.5;
+    font-size: 20px;
+    background-color: rgb(216, 216, 216);
+    padding: 2em;
+}
+
+h1, h2{
+    font-size: 40px;
+    color: white;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+button{
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(5, 201, 152);
+    color: #FFFAFA;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#sortButtons {
+    font-size: 17px;    
+    margin-bottom: 35px;
+    color: white;
+    background-color: black;
+}
+
+button:disabled{
+    opacity: 0.5;
+}
+
+button:hover{
+    background-color: rgb(6, 153, 146);
+}
+
+input{
+    font-size: 15px;
+    padding: 4px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+}
+
+#categories{
+    font-size: 17px;    
+    margin-bottom: 35px;
+    color: white;
+    background-color: black;
+}   
+
+input[type=text]:focus {
+    background-color: rgb(5, 201, 152);
+}
+
+body{
+    text-align: center;
+    background-image: url('405700.jpg');
+}
+
+.deleteBtn{
+    background-color: white;
+    color: black;
+}

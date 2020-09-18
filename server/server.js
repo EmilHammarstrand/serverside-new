@@ -18,10 +18,6 @@ app.get("/", (req, res)=>{
 })
 
 
-/* app.get('/search', (req, res) => {
-    
-}) */
-
 app.get('/boats', (req, res) => {  //Hämtar alla båtar i databasen.
     console.log('Hämtar båtarna från databasen, funkar det?...')
     getAllBoats(dataOrError => {

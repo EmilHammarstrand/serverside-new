@@ -121,7 +121,7 @@ function searchInput(query, callback){
             break;
      
         case  'newest':
-            sort = { year : 1 }
+            sort = { year : -1 }
             console.log('5')
             break;
      }

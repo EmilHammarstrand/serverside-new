@@ -1,8 +1,8 @@
 const { ObjectID } = require('mongodb');
 const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://dbBerrasBoats:dbBerrasBoats123@berrasboats.jr37v.mongodb.net/<dbname>?retryWrites=true&w=majority'
 const dbName = 'berrasboats';
-const collection = 'berrasboats'
+const collection = 'berrasboats';
 
 
 
